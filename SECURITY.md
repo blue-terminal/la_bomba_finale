@@ -10,8 +10,8 @@ currently being supported with security updates.
 | end    |     2030-2050       |
 | 40.30  |       ⏲️           |
 |official|      2025-2028      |
-| 11.02  | :white_check_mark: |
-| 11.00  |       🛑           |
+| 11.02.x  | :white_check_mark: |
+| 11.00.x  |       🛑           |
 | 10.0.x |       ⏲️           |
 |  BETA  |     2023-2024      | 
 | 7.8.x  | :white_check_mark: |
