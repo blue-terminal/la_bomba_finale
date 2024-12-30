@@ -14,7 +14,7 @@ currently being supported with security updates.
 | 11.00  |       🛑           |
 | 10.0.x |       ⏲️           |
 |  BETA  |     2023-2024      | 
-| 7.8.x  |       ⏲️           |
+| 7.8.x  | :white_check_mark: |
 | 5.4.x  | :white_check_mark: |
 | 5.1.x  | :exclamation:      |
 | alpha  |     2021-2022       | 
