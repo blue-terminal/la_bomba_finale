@@ -12,7 +12,7 @@ currently being supported with security updates.
 |official|      2025-2028      |
 | 11.02.x  | :white_check_mark: |
 | 11.00.x  |       🛑           |
-| 10.0.x |       ⏲️           |
+| 10.00.x |       ⏲️           |
 |  BETA  |     2023-2024      | 
 | 7.8.x  | :white_check_mark:  |
 | 5.4.x  | :exclamation:  |
