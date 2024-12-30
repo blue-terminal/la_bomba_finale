@@ -18,8 +18,8 @@ currently being supported with security updates.
 | 5.4.x  | :exclamation:  |
 | 5.1.x  | :exclamation:      |
 | alpha  |     2021-2022       | 
-| 5.0.x  | :x:                 |
-| 4.0.x  | :white_check_mark:  |
+| 5.0.x  |       :x:            |
+| 4.0.x  |         🛑           |
 | 4.0.x  | :x:                 |
 
 ## Reporting a Vulnerability 
