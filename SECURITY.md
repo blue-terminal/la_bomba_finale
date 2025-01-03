@@ -8,9 +8,9 @@ currently being supported with security updates.
 | Version|   Supported        |
 | -----  |     ----          |
 |full version|      2024-2025      |
-| 10.x |       ✔️           |
+| 10.x |  :white_check_mark:     |
 |  BETA  |     2023-2024      | 
-| 7.8.x  | :white_check_mark:  |
+| 7.8.x  |        ❗    |
 | 5.4.x  | :exclamation:  |
 | 5.1.x  | :exclamation:      |
 | alpha  |     2021-2022       | 
