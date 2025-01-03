@@ -7,12 +7,8 @@ currently being supported with security updates.
 
 | Version|   Supported        |
 | -----  |     ----          |
-| end    |     2030-2050       |
-| 40.30  |       ⏲️           |
-|official|      2025-2028      |
-| 11.02.x  |        ⏲️  |
-| 11.00.x  |       ⏲️            |
-| 10.00.x |       ⏲️           |
+|full version|      2024-2025      |
+| 10.00.x |       ✔️           |
 |  BETA  |     2023-2024      | 
 | 7.8.x  | :white_check_mark:  |
 | 5.4.x  | :exclamation:  |
